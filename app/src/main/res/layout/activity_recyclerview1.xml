@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="9"
+    android:background="@drawable/background_bg"
+    tools:context=".recyclerview1">
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar1"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize">
+            <ImageButton
+                android:id="@+id/btnlog"
+                android:background="@null"
+                android:layout_weight="1"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/ic_baseline_login_24"
+                android:layout_gravity="right"/>
+            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Products"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:layout_gravity="center">
+            </TextView>
+
+
+        </androidx.appcompat.widget.Toolbar>
+    </LinearLayout>
+    <LinearLayout
+        android:padding="10dp"
+
+        android:layout_width="match_parent"
+        android:layout_weight="8"
+        android:layout_height="0dp"
+        android:background="@drawable/recyclerview_bg">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv2"
+            tools:listitem="@layout/row_add2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="60dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+</LinearLayout>

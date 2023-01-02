@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="203dp"
+            android:background="@drawable/blue_bg">
+            <ImageView
+                android:layout_width="97dp"
+                android:layout_height="57dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/logo"
+                android:layout_marginTop="60dp"></ImageView>
+        </FrameLayout>
+      <RelativeLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="62dp"
+          android:layout_marginTop="36.7dp"
+          android:layout_marginRight="62dp"
+          android:background="@drawable/blue_border_rounded_cornwe">
+
+          <EditText
+              android:id="@+id/username"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_toRightOf="@+id/iemai"
+              android:fontFamily="@font/poppins_regular"
+              android:hint="EMAIL"
+              android:inputType="textEmailAddress"
+              android:maxLines="1"
+              android:paddingLeft="17dp"
+              android:paddingTop="15dp"
+              android:paddingBottom="15dp"
+              android:textCursorDrawable="@drawable/cursor_color"
+              android:textSize="12dp"></EditText>
+
+          <ImageView
+              android:id="@+id/iemai"
+              android:layout_width="24.7dp"
+              android:layout_height="20.3dp"
+              android:layout_centerVertical="true"
+              android:layout_marginLeft="17dp"
+              android:src="@drawable/email"></ImageView>
+      </RelativeLayout>
+      <RelativeLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="62dp"
+          android:layout_marginTop="36.7dp"
+          android:layout_marginRight="62dp"
+          android:background="@drawable/blue_border_rounded_cornwe">
+
+          <EditText
+              android:id="@+id/pwd"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_toRightOf="@+id/ipass1"
+              android:fontFamily="@font/poppins_regular"
+              android:hint="PASSWORD"
+              android:inputType="textPassword"
+              android:maxLines="1"
+              android:paddingLeft="17dp"
+              android:paddingTop="15dp"
+              android:paddingBottom="15dp"
+              android:textCursorDrawable="@drawable/cursor_color"
+              android:textSize="12dp"></EditText>
+          <ImageView
+              android:id="@+id/ipass1"
+              android:layout_width="24.7dp"
+              android:layout_height="20.3dp"
+              android:layout_centerVertical="true"
+              android:layout_marginLeft="17dp"
+              android:src="@drawable/password"></ImageView>
+      </RelativeLayout>
+      <RelativeLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="62dp"
+          android:layout_marginTop="36.7dp"
+          android:layout_marginRight="62dp"
+          android:background="@drawable/blue_border_rounded_cornwe">
+
+          <EditText
+              android:id="@+id/repwd"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_toRightOf="@+id/ipass"
+              android:fontFamily="@font/poppins_regular"
+              android:hint="RETYPE PASSWORD"
+              android:inputType="textPassword"
+              android:maxLines="1"
+              android:paddingLeft="17dp"
+              android:paddingTop="15dp"
+              android:paddingBottom="15dp"
+              android:textCursorDrawable="@drawable/cursor_color"
+              android:textSize="12dp"></EditText>
+          <ImageView
+              android:id="@+id/ipass"
+              android:layout_width="24.7dp"
+              android:layout_height="20.3dp"
+              android:layout_centerVertical="true"
+              android:layout_marginLeft="17dp"
+              android:src="@drawable/password"></ImageView>
+      </RelativeLayout>
+      <Button
+          android:layout_width="match_parent"
+          android:id="@+id/signup"
+          android:layout_marginLeft="62dp"
+          android:layout_marginTop="26.7dp"
+          android:fontFamily="@font/poppins_medium"
+          android:layout_marginRight="62dp"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+
+          android:hint="REGISTER"
+          android:textColor="#ffffff"
+
+          android:background="@drawable/blue_fill__rounded_color"></Button>
+      <Button
+          android:layout_width="match_parent"
+          android:id="@+id/signin"
+          android:layout_marginLeft="62dp"
+          android:layout_marginTop="26.7dp"
+          android:fontFamily="@font/poppins_medium"
+          android:layout_marginRight="62dp"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+
+          android:hint="Avez-Vous deja un compte "
+          android:textColor="#ffffff"
+
+          android:background="@drawable/blue_fill__rounded_color"></Button>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
